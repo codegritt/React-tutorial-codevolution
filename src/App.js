@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ClassClick from "./components/ClassClick";
+import DestArray from "./components/DestArray";
+import EventBind from "./components/EventBind";
+import FunctionClick from "./components/FunctionClick";
+import Greet from "./components/Greet";
+import NameList from "./components/NameList";
+import Parent from "./components/Parent";
+import UserGreeting from "./components/UserGreeting";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Greet />
+      <hr></hr>
+      <DestArray name="gokul" heroName="sigma" />
+      <hr></hr>
+      <FunctionClick />
+      <hr></hr>
+      <ClassClick />
+      <hr></hr>
+      <EventBind />
+      <hr></hr>
+      <Parent />
+      <hr></hr>
+      <UserGreeting />
+      <hr></hr>
+      <NameList />
     </div>
   );
 }
